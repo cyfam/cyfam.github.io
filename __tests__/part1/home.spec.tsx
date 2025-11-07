@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Home from "@/src/app/page";
+import Home from "@/app/page";
 
 describe("Part 1 – Home page", () => {
   it("renders name as h1 from resume.json", async () => {

@@ -17,26 +17,26 @@ export default function Home() {
 
   return (
     <main>
-      <Nav />
-      <Header/>
-       <Section >
-        <EducationList />
+      <Nav context="About" />
+      <Header image={headshot}/>
+       <Section title="Education">
+        <EducationList education={education}/>
+       </Section>
+
+      <Section title="Honors">
+        <Honors honors={honors_and_awards}/>
       </Section>
 
-      <Section >
-        <Honors />
+      <Section title="Skills">
+        <Skills skills={skills} />
       </Section>
 
-      <Section >
-        <Skills  />
+      <Section title="Experience & Leadership">
+        <Experience items={leadership_and_experience} />
       </Section>
 
-      <Section >
-        <Experience />
-      </Section>
-
-       <Section >
-        <Projects />
+      <Section title="Projects">
+        <Projects info={projects} />
       </Section>
       <Footer />
     </main>

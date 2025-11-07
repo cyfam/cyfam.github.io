@@ -1,5 +1,5 @@
 import { render, screen, within } from "@testing-library/react";
-import Home from "@/src/app/page";
+import Home from "@/app/page";
 import resume from "@/src/app/resume.json";
 
 describe("Part 1 – Dynamic lists render counts from JSON", () => {

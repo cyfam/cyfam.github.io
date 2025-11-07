@@ -1,5 +1,5 @@
 import { render, screen, within } from "@testing-library/react";
-import Home from "@/src/app/page";
+import Home from "@/app/page";
 import resumeData from "@/src/app/resume.json";
 
 // Mock next/image so Jest can render <Image />
