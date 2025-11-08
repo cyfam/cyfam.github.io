@@ -9,17 +9,17 @@ import ContactPage from "../components/ContactPage";
 const resume = resumeData as Resume;
 
 export default function Home() {
-    const {contact, headshot} = resume;
+    const {name, tagline, contact, headshot} = resume;
 
     return (
         <main>
-            <Nav context="Contact" />
-            <Header image={headshot}/>
+            <Nav name={name} context="Contact" />
+            <Header name={name} tagline={tagline} image={headshot}/>
             <Section title="Contact Info">
                 <ContactPage contact={contact} />
             </Section>
 
-            <Footer />
+            <Footer  />
         </main>
     );
 }

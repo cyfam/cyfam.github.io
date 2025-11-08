@@ -11,7 +11,7 @@ export default function Projects({info = []}: ProjectsProps) {
   })
 
   return (
-    <div className="flex flex-wrap p-5 flex-row gap-5">
+    <div className="flex flex-wrap justify-center p-5 flex-row gap-5">
       {pItems}
     </div>
   );

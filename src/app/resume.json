@@ -1,7 +1,7 @@
 {
   "name": "Trent Utterback",
   "tagline": "I want to create digital experiences through game development and music production.",
-  "headshot": "images/ds_headshot.jpg",
+  "headshot": "images/headshot.png",
   "contact": {
     "address": "359 W Hancock St, Athens, GA",
     "phone": "(770)298-5600",
@@ -25,7 +25,7 @@
     }
   ],
   "skills": [
-    "HTML",
+    "React",
     "Java",
     "C#",
     "Unity3D Game Engine"
@@ -50,8 +50,8 @@
       "title": "Portfolio Website",
       "image": "images/website.png",
       "descr": [
-        "Built with HTML/CSS",
-        "Deployed on Netlify"
+        "Built with Next.js & Tailwindcss",
+        "Deployed on Github Pages"
       ]
     },
     {

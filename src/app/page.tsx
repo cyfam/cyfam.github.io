@@ -17,13 +17,13 @@ export default function Home() {
 
   return (
     <main>
-      <Nav context="About" />
-      <Header image={headshot}/>
+      <Nav context="home" name={name} />
+      <Header name={name} image={headshot} tagline={tagline}/>
        <Section title="Education">
-        <EducationList education={education}/>
+        <EducationList {...education}/>
        </Section>
 
-      <Section title="Honors">
+      <Section title="Honors and Awards">
         <Honors honors={honors_and_awards}/>
       </Section>
 
@@ -31,7 +31,7 @@ export default function Home() {
         <Skills skills={skills} />
       </Section>
 
-      <Section title="Experience & Leadership">
+      <Section title="Leadership and Experience">
         <Experience items={leadership_and_experience} />
       </Section>
 

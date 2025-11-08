@@ -3,16 +3,17 @@
 import Link from "next/link";
 
 type PageProps = {
+    name?: string;
     context: string;
 };
 
 /* pass a prop to indicate whether to render the link to Contact or About */
-export default function Nav({context}: PageProps) {
+export default function Nav({name, context}: PageProps) {
 
     return (
-        <div className="sticky top-0 p-5 bg-linear-75 from-white from-25% to-purple-300 flex flex-row justify-between border-b-2 transition duration-75 hover:shadow-md">
+        <div className="sticky top-0 p-5 bg-white flex flex-row justify-between border-b-2 transition duration-75 hover:shadow-md">
            <p>Trent Utterback</p>
-           <p> <Link href={(context == "About") ? '/contact' : '/about'} >{(context == "About") ? "Contact" : "About"}</Link> </p>
+           <p> <Link href={(context == "home") ? '/contact' : '/'} >{(context == "home") ? `Contact ${name}` : `About ${name}`}</Link> </p>
         </div>
     );
 }

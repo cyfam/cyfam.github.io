@@ -10,7 +10,7 @@ type ContactFormData = {
     message: string
 }
 
-export default function ContactPage(contact: Contact) {
+export default function ContactPage({ contact }: { contact: Contact }) {
     const [formData, setFormData] = useState<ContactFormData>({
         name: '',
         email: '',
@@ -26,11 +26,12 @@ export default function ContactPage(contact: Contact) {
     }
 
     return (
-        <div>
-            <p>{contact.address} | {contact.phone} | {contact.email} </p>
-            <Link href={contact.linkedin}> Linkedin </Link>
+        <div className='flex justify-center'>
+        <div className='flex flex-col justify-center p-5 w-2xl gap-5'>
+            <p className='text-center'>{contact.address} | {contact.phone} | {contact.email} </p>
+            <Link href={contact.linkedin} className='text-center'> Linkedin </Link>
 
-            <form>
+            <form action={'https://formsubmit.co/trentutterback@gmail.com'} method='POST' className='flex flex-col gap-5'>
                 <div>
                 <label htmlFor="name" className="block font-medium mb-1">
                     Name:
@@ -80,9 +81,10 @@ export default function ContactPage(contact: Contact) {
                 type="submit"
                 className="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
                 >
-                Login
+                Submit
                 </button>
             </form>
+        </div>
         </div>
     );
 }
